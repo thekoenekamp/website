@@ -35,4 +35,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any additional information, you can reach me at [email@christophkoenekamp.com](mailto:email@christophkoenekamp.com).
+For any additional information, you can reach me at [contact@christophkoenekamp.com](mailto:contact@christophkoenekamp.com).

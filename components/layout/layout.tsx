@@ -1,17 +1,9 @@
-'use client';
-
 import styled from '@emotion/styled';
 import { ThemeProvider } from '@mui/material';
 import { CssBaseline } from '@mui/material/';
-import { Scheherazade_New } from 'next/font/google';
-import React, { ReactNode } from 'react';
-import Footer from './Footer';
-import { themeDark } from './styles';
-
-const font = Scheherazade_New({
-	subsets: ['latin'],
-	weight: '400',
-});
+import React from 'react';
+// import Footer from './Footer';
+import { themeDark, themeLight } from './styles';
 
 const StyledSection = styled.section`
 	display: flex;
@@ -20,9 +12,9 @@ const StyledSection = styled.section`
 	align-content: center;
 	margin: 0 auto 0 auto;
 	height: 100vh;
-	width: 100%;
-	background: #000;
-	pointer-events: none;
+	width: 100vw;
+	// background: #000;
+	// pointer-events: none;
 
 	@media (max-width: 960px) {
 		display: flex;
@@ -42,21 +34,14 @@ const StyledSection = styled.section`
 	}
 `;
 
-// export const metadata = {
-// 	title: 'MUI',
-// 	description: 'MUI',
-// };
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en">
-			<body className={font.className}>
-				<ThemeProvider theme={themeDark}>
-					<CssBaseline />
-					<StyledSection>{children}</StyledSection>
-					<Footer />
-				</ThemeProvider>
-			</body>
-		</html>
+		<>
+			<ThemeProvider theme={themeLight}>
+				<CssBaseline />
+				<StyledSection>{children}</StyledSection>
+				{/* <Footer /> */}
+			</ThemeProvider>
+		</>
 	);
 }

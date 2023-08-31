@@ -2,7 +2,7 @@
 	"name": "christophkoenekamp-website",
 	"version": "0.1.0",
 	"description": "Personal website and portfolio for Christoph Koenekamp, built with Next.js",
-	"author": "Christoph Koenekamp <email@christophkoenekamp.com>",
+	"author": "Christoph Koenekamp <contact@christophkoenekamp.com>",
 	"license": "MIT",
 	"private": false,
 	"repository": {
