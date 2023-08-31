@@ -215,6 +215,9 @@ export default function Page() {
 					<a target="_blank" rel="noreferrer" href={'https://www.instagram.com/christophkoenekamp'}>
 						<Links>Instagram</Links>
 					</a>
+					<a target="_blank" rel="noreferrer" href={'https://www.facebook.com/thechristophkoenekamp'}>
+						<Links>Facebook</Links>
+					</a>
 				</LinksContainer>
 			</StyledBox>
 		</>
