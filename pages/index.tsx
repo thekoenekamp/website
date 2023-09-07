@@ -167,18 +167,18 @@ export default function Page() {
 		<>
 			<Head>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<title>Christoph Koenekamp</title>
-				<meta property="og:title" content="Christoph Koenekamp" key="title" />
-				<meta property="og:site_name" content="Christoph Koenekamp" />
+				<title>The Koenekamp</title>
+				<meta property="og:title" content="The Koenekamp" key="title" />
+				<meta property="og:site_name" content="The Koenekamp" />
 				<meta property="og:description" content="Personal website of Christoph Koenekamp." />
-				<meta property="og:image" content="https://christophkoenekamp.com/favicon.ico" />
-				<meta property="og:url" content="https://christophkoenekamp.com/" />
+				<meta property="og:image" content="https://thekoenekamp.com/favicon.ico" />
+				<meta property="og:url" content="https://thekoenekamp.com/" />
 				<meta property="og:type" content="website" />
 				<meta name="twitter:card" content="summary_large_image" />
-				<meta name="twitter:site" content="@christophkoenekamp" />
-				<meta name="twitter:title" content="Christoph Koenekamp" />
+				<meta name="twitter:site" content="@thekoenekamp" />
+				<meta name="twitter:title" content="The Koenekamp" />
 				<meta name="twitter:description" content="Personal website of Christoph Koenekamp." />
-				<meta name="twitter:image" content="https://christophkoenekamp.com/favicon.ico" />
+				<meta name="twitter:image" content="https://thekoenekamp.com/favicon.ico" />
 			</Head>
 			{loading && (
 				<>
@@ -191,18 +191,18 @@ export default function Page() {
 							...font.style,
 						}}
 					>
-						Koenekamp
+						The Koenekamp
 					</CurtainText>
 				</>
 			)}
 			<StyledBox>
 				<Title>
-					<a href={'/'}>Koenekamp</a>
+					<a href={'/'}>The Koenekamp</a>
 				</Title>
 				<Text style={{ fontWeight: 'bold' }}>
 					<a>Christoph Könekamp</a>
 				</Text>
-				<EmailLink href="mailto:contact@christophkoenekamp.com">contact@christophkoenekamp.com</EmailLink>
+				<EmailLink href="mailto:contact@thekoenekamp.com">contact@thekoenekamp.com</EmailLink>
 				<Text>Full-Stack Web3 Developer</Text>
 				<Text>DeFi Specialist</Text>
 				<LinksContainer>
