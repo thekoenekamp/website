@@ -209,7 +209,7 @@ export default function Page() {
 					<a target="_blank" rel="noreferrer" href={'https://twitter.com/thekoenekamp'}>
 						<Links>X</Links>
 					</a>
-					<a target="_blank" rel="noreferrer" href={'https://www.linkedin.com/in/christophkoenekamp'}>
+					<a target="_blank" rel="noreferrer" href={'https://www.linkedin.com/in/thekoenekamp'}>
 						<Links>LinkedIn</Links>
 					</a>
 					<a target="_blank" rel="noreferrer" href={'https://www.facebook.com/thekoenekamp'}>
@@ -217,6 +217,9 @@ export default function Page() {
 					</a>
 					<a target="_blank" rel="noreferrer" href={'https://www.instagram.com/christophkoenekamp'}>
 						<Links>Instagram</Links>
+					</a>
+					<a target="_blank" rel="noreferrer" href={'https://github.com/thekoenekamp'}>
+						<Links>GitHub</Links>
 					</a>
 				</LinksContainer>
 			</StyledBox>
