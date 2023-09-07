@@ -206,11 +206,14 @@ export default function Page() {
 				<Text>Full-Stack Web3 Developer</Text>
 				<Text>DeFi Specialist</Text>
 				<LinksContainer>
-					<a target="_blank" rel="noreferrer" href={'https://twitter.com/KoenekampC'}>
+					<a target="_blank" rel="noreferrer" href={'https://twitter.com/thekoenekamp'}>
 						<Links>X</Links>
 					</a>
 					<a target="_blank" rel="noreferrer" href={'https://www.linkedin.com/in/christophkoenekamp'}>
 						<Links>LinkedIn</Links>
+					</a>
+					<a target="_blank" rel="noreferrer" href={'https://www.facebook.com/thechristophkoenekamp'}>
+						<Links>Facebook</Links>
 					</a>
 					<a target="_blank" rel="noreferrer" href={'https://www.instagram.com/christophkoenekamp'}>
 						<Links>Instagram</Links>
