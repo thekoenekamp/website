@@ -38,6 +38,7 @@ const CurtainText = styled.div`
 	z-index: 9999;
 
 	@media (max-width: 600px) {
+		width: 95%;
 		font-size: 3rem;
 	}
 `;
