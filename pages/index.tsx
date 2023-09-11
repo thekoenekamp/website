@@ -198,9 +198,7 @@ export default function Page() {
 			)}
 			<StyledBox>
 				<Title>
-					<a href={'/'} aria-label="Home page">
-						The Koenekamp
-					</a>
+					<a>The Koenekamp</a>
 				</Title>
 				<Text style={{ fontWeight: 'bold' }}>
 					<a>Christoph Könekamp</a>
