@@ -1,6 +1,6 @@
 # Christoph Koenekamp's Personal Website
 
-Welcome to the repository for my personal website, hosted at [christophkoenekamp.com](http://www.christophkoenekamp.com).
+Welcome to the repository for my personal website, hosted at [thekoenekamp.com](http://www.thekoenekamp.com).
 
 ## About
 
@@ -19,8 +19,8 @@ This website serves as my digital portfolio, showcasing my skills, projects, and
 
 If you want to run the website locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/username/christophkoenekamp.com.git`
-2. Navigate to the project directory: `cd christophkoenekamp.com`
+1. Clone the repository: `git clone https://github.com/username/thekoenekamp.com.git`
+2. Navigate to the project directory: `cd thekoenekamp.com`
 3. Install dependencies (if any): `npm install`
 4. Start the local server (instructions will depend on your setup)
 5. Open in your browser at `http://localhost:PORT`
@@ -35,4 +35,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any additional information, you can reach me at [contact@christophkoenekamp.com](mailto:contact@christophkoenekamp.com).
+For any additional information, you can reach me at [contact@thekoenekamp.com](mailto:contact@thekoenekamp.com).
