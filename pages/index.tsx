@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Box, Typography } from '@mui/material';
-import { Cormorant_Garamond, Luxurious_Script } from 'next/font/google';
+import { Baskervville, Luxurious_Script } from 'next/font/google';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 
@@ -9,9 +9,9 @@ const font = Luxurious_Script({
 	weight: '400',
 });
 
-const fontText = Cormorant_Garamond({
+const fontText = Baskervville({
 	subsets: ['latin'],
-	weight: ['300', '400'],
+	weight: ['400'],
 });
 
 const Curtain = styled.div`
@@ -88,6 +88,7 @@ const EmailLink = styled.a`
 	font-family: ${fontText.style.fontFamily};
 	font-weight: 300;
 	margin-bottom: 1rem;
+	font-size: 0.9rem;
 
 	&:hover {
 		text-decoration: underline;
@@ -104,7 +105,7 @@ const Text = styled(Typography)`
 	color: #000;
 	cursor: default;
 	text-transform: none;
-	font-size: 1rem;
+	font-size: 0.9rem;
 
 	&:hover {
 		background-color: transparent;
@@ -119,10 +120,10 @@ const LinksContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 0.1rem;
+	gap: 0.25rem;
 
 	& > a:first-child {
-		margin-top: 1rem;
+		margin-top: 2.5rem;
 	}
 `;
 
@@ -136,7 +137,7 @@ const Links = styled(Typography)`
 	color: #000;
 	text-transform: none;
 	text-decoration: underline;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	font-weight: 300;
 
 	&:hover {
@@ -197,29 +198,32 @@ export default function Page() {
 			)}
 			<StyledBox>
 				<Title>
-					<a href={'/'}>The Koenekamp</a>
+					<a href={'/'} aria-label="Home page">
+						The Koenekamp
+					</a>
 				</Title>
 				<Text style={{ fontWeight: 'bold' }}>
 					<a>Christoph Könekamp</a>
 				</Text>
 				<EmailLink href="mailto:contact@thekoenekamp.com">contact@thekoenekamp.com</EmailLink>
-				<Text>Full-Stack Web3 Developer</Text>
 				<Text>DeFi Specialist</Text>
+				<Text>Blockchain Consultant</Text>
+				<Text>Full-Stack Web3 Developer</Text>
 				<LinksContainer>
-					<a target="_blank" rel="noreferrer" href={'https://twitter.com/thekoenekamp'}>
+					<a target="_blank" rel="noreferrer" href={'https://twitter.com/thekoenekamp'} aria-label="The Koenekamp's Twitter">
 						<Links>X</Links>
 					</a>
-					<a target="_blank" rel="noreferrer" href={'https://www.linkedin.com/in/thekoenekamp'}>
+					<a target="_blank" rel="noreferrer" href={'https://github.com/thekoenekamp'} aria-label="The Koenekamp's GitHub">
+						<Links>GitHub</Links>
+					</a>
+					<a target="_blank" rel="noreferrer" href={'https://www.linkedin.com/in/thekoenekamp'} aria-label="The Koenekamp's LinkedIn">
 						<Links>LinkedIn</Links>
 					</a>
-					<a target="_blank" rel="noreferrer" href={'https://www.facebook.com/thekoenekamp'}>
+					<a target="_blank" rel="noreferrer" href={'https://www.facebook.com/thekoenekamp'} aria-label="The Koenekamp's Facebook">
 						<Links>Facebook</Links>
 					</a>
-					<a target="_blank" rel="noreferrer" href={'https://www.instagram.com/thekoenekamp'}>
+					<a target="_blank" rel="noreferrer" href={'https://www.instagram.com/thekoenekamp'} aria-label="The Koenekamp's Instagram">
 						<Links>Instagram</Links>
-					</a>
-					<a target="_blank" rel="noreferrer" href={'https://github.com/thekoenekamp'}>
-						<Links>GitHub</Links>
 					</a>
 				</LinksContainer>
 			</StyledBox>
