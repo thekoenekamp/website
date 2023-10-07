@@ -209,7 +209,7 @@ export default function Page() {
 				<Text>Blockchain Consultant</Text>
 				<Text>Full-Stack Web3 Developer</Text>
 				<LinksContainer>
-					<a target="_blank" rel="noreferrer" href={'https://twitter.com/thekoenekamp'} aria-label="The Koenekamp's Twitter">
+					<a target="_blank" rel="noreferrer" href={'https://x.com/thekoenekamp'} aria-label="The Koenekamp's Twitter">
 						<Links>X</Links>
 					</a>
 					<a target="_blank" rel="noreferrer" href={'https://github.com/thekoenekamp'} aria-label="The Koenekamp's GitHub">
