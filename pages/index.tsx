@@ -18,8 +18,8 @@ const Curtain = styled.div`
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
 	// background: rgba(0, 50, 20, 1);
 	background: #000;
 	transition: width 2.5s; // Adjust timing if needed
@@ -38,7 +38,7 @@ const CurtainText = styled.div`
 	z-index: 9999;
 
 	@media (max-width: 600px) {
-		width: 95%;
+		// width: 95%;
 		font-size: 3rem;
 	}
 `;
