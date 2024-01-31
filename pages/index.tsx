@@ -2,6 +2,11 @@ import styled from '@emotion/styled';
 import { Box, Typography } from '@mui/material';
 import { Baskervville, Luxurious_Script } from 'next/font/google';
 import Head from 'next/head';
+import Facebook from 'public/svg/socials/facebook.svg';
+import Github from 'public/svg/socials/github.svg';
+import Instagram from 'public/svg/socials/instagram.svg';
+import LinkedIn from 'public/svg/socials/linkedin.svg';
+import X from 'public/svg/socials/x.svg';
 import { useEffect, useState } from 'react';
 
 const font = Luxurious_Script({
@@ -88,7 +93,7 @@ const EmailLink = styled.a`
 	text-decoration: underline;
 	font-family: ${fontText.style.fontFamily};
 	font-weight: 300;
-	margin-bottom: 1rem;
+	margin-bottom: 2.5rem;
 	font-size: 0.9rem;
 
 	&:hover {
@@ -119,13 +124,14 @@ const Text = styled(Typography)`
 
 const LinksContainer = styled.div`
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	gap: 2.5rem;
 	justify-content: center;
-	gap: 0.25rem;
+	margin-top: 2.5rem;
 
-	& > a:first-child {
-		margin-top: 2.5rem;
-	}
+	// & > a:first-child {
+	// 	margin-top: 2.5rem;
+	// }
 `;
 
 const Links = styled(Typography)`
@@ -208,21 +214,27 @@ export default function Page() {
 				<Text>DeFi Specialist</Text>
 				<Text>Blockchain Consultant</Text>
 				<Text>Full-Stack Web3 Developer</Text>
+				<Text>Content Architect (ENS/IPFS)</Text>
 				<LinksContainer>
 					<a target="_blank" rel="noreferrer" href={'https://x.com/thekoenekamp'} aria-label="The Koenekamp's Twitter">
-						<Links>X</Links>
+						{/* <Links>X</Links> */}
+						<X style={{ fontSize: '16px', fill: 'black', height: '100%' }} />
 					</a>
 					<a target="_blank" rel="noreferrer" href={'https://github.com/thekoenekamp'} aria-label="The Koenekamp's GitHub">
-						<Links>GitHub</Links>
+						{/* <Links>GitHub</Links> */}
+						<Github style={{ fontSize: '16px', fill: 'black', height: '100%' }} />
 					</a>
 					<a target="_blank" rel="noreferrer" href={'https://www.linkedin.com/in/thekoenekamp'} aria-label="The Koenekamp's LinkedIn">
-						<Links>LinkedIn</Links>
+						{/* <Links>LinkedIn</Links> */}
+						<LinkedIn style={{ fontSize: '16px', fill: 'black', height: '100%' }} />
 					</a>
 					<a target="_blank" rel="noreferrer" href={'https://www.facebook.com/thekoenekamp'} aria-label="The Koenekamp's Facebook">
-						<Links>Facebook</Links>
+						{/* <Links>Facebook</Links> */}
+						<Facebook style={{ fontSize: '16px', fill: 'black', height: '100%' }} />
 					</a>
 					<a target="_blank" rel="noreferrer" href={'https://www.instagram.com/thekoenekamp'} aria-label="The Koenekamp's Instagram">
-						<Links>Instagram</Links>
+						{/* <Links>Instagram</Links> */}
+						<Instagram style={{ fontSize: '16px', fill: 'black', height: '100%' }} />
 					</a>
 				</LinksContainer>
 			</StyledBox>
