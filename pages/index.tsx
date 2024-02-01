@@ -212,7 +212,7 @@ export default function Page() {
 				<Text>DeFi Specialist</Text>
 				<Text>Blockchain Consultant</Text>
 				<Text>Full-Stack Web3 Developer</Text>
-				<Text>Content Architect (ENS/IPFS)</Text>
+				<Text>Infrastructure Architect (ENS/IPFS)</Text>
 				<LinksContainer>
 					<a target="_blank" rel="noreferrer" href={'https://x.com/thekoenekamp'} aria-label="The Koenekamp's Twitter">
 						{/* <Links>X</Links> */}
