@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { Box, Typography } from '@mui/material';
 import { Baskervville, Luxurious_Script } from 'next/font/google';
 import Head from 'next/head';
@@ -59,6 +60,7 @@ const StyledBox = styled(Box)`
 	height: auto;
 	margin: 2% auto;
 	background-color: transparent;
+	position: fixed;
 
 	@media (max-width: 600px) {
 		width: 95%;
@@ -157,6 +159,51 @@ const Links = styled(Typography)`
 	}
 `;
 
+const StyledFooter = styled(Box)`
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end; // aligns children to the bottom
+	align-items: center; // keeps content centered horizontally
+	width: 100%;
+	height: 100%;
+	padding-bottom: 2rem;
+	cursor: default;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: auto;
+
+	a {
+		color: #333333;
+		fill: #333333;
+		font-size: 0.6rem;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		display: flex;
+		flex-direction: row;
+		cursor: pointer;
+		margin: 0;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+			color: #000;
+			fill: #000;
+			font-weight: bold;
+		}
+	}
+
+	p {
+		color: #333333;
+		font-size: 0.6rem;
+	}
+
+	@media (max-width: 680px) {
+	}
+`;
+
 export default function Page() {
 	const [loading, setLoading] = useState(true);
 	const [hideCurtain, setHideCurtain] = useState(false);
@@ -170,6 +217,9 @@ export default function Page() {
 
 		return () => clearTimeout(timer); // Cleanup timer to avoid potential memory leak
 	}, []);
+
+	// get the current year
+	const currentYear = new Date().getFullYear();
 
 	return (
 		<>
@@ -235,6 +285,13 @@ export default function Page() {
 						<Instagram style={{ fontSize: '16px', fill: 'black', height: '100%' }} />
 					</a>
 				</LinksContainer>
+				<StyledFooter>
+					<a target="_blank" rel="noreferrer" href={'https://thekoenekamp.eth.link/'} aria-label="IPFS">
+						IPFS
+						<OpenInNewIcon style={{ fontSize: '12px', height: '100%' }} />
+					</a>
+					<p>Copyright © {currentYear} The Koenekamp All rights reserved.</p>
+				</StyledFooter>
 			</StyledBox>
 		</>
 	);
