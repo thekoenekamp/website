@@ -117,9 +117,9 @@ const Text = styled(Typography)`
 		background-color: transparent;
 	}
 
-	@media (max-width: 600px) {
-		font-size: 0.8rem;
-	}
+	// @media (max-width: 600px) {
+	// 	font-size: 0.8rem;
+	// }
 `;
 
 const LinksContainer = styled.div`
@@ -207,9 +207,7 @@ export default function Page() {
 				<Title>
 					<a>The Koenekamp</a>
 				</Title>
-				<Text style={{ fontWeight: 'bold' }}>
-					<a>Christoph Könekamp</a>
-				</Text>
+				<Text style={{ fontWeight: 'bold' }}>Christoph Könekamp</Text>
 				<EmailLink href="mailto:contact@thekoenekamp.com">contact@thekoenekamp.com</EmailLink>
 				<Text>DeFi Specialist</Text>
 				<Text>Blockchain Consultant</Text>
