@@ -78,6 +78,7 @@ const Title = styled(Typography)`
 	font-size: 4rem;
 	cursor: default;
 	margin-bottom: 2.5rem;
+	z-index: 2;
 
 	a {
 		color: #000;
@@ -97,6 +98,7 @@ const EmailLink = styled.a`
 	font-weight: 300;
 	margin-bottom: 2.5rem;
 	font-size: 0.9rem;
+	z-index: 2;
 
 	&:hover {
 		text-decoration: underline;
@@ -114,6 +116,7 @@ const Text = styled(Typography)`
 	cursor: default;
 	text-transform: none;
 	font-size: 0.9rem;
+	z-index: 2;
 
 	&:hover {
 		background-color: transparent;
@@ -130,6 +133,7 @@ const LinksContainer = styled.div`
 	gap: 2.5rem;
 	justify-content: center;
 	margin-top: 2.5rem;
+	z-index: 2;
 
 	// & > a:first-child {
 	// 	margin-top: 2.5rem;
@@ -166,13 +170,14 @@ const StyledFooter = styled(Box)`
 	align-items: center; // keeps content centered horizontally
 	width: 100%;
 	height: 100%;
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 	cursor: default;
 	bottom: 0;
 	left: 0;
 	position: fixed;
 	right: 0;
 	top: auto;
+	z-index: 1;
 
 	a {
 		color: #333333;
