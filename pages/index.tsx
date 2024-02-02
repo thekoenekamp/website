@@ -262,7 +262,7 @@ export default function Page() {
 				<Text>DeFi Specialist</Text>
 				<Text>Blockchain Consultant</Text>
 				<Text>Full-Stack Web3 Developer</Text>
-				<Text>Infrastructure Architect (ENS/IPFS)</Text>
+				<Text>Infrastructure Architect (ENS/IPFS/IPNS)</Text>
 				<LinksContainer>
 					<a target="_blank" rel="noreferrer" href={'https://x.com/thekoenekamp'} aria-label="The Koenekamp's Twitter">
 						{/* <Links>X</Links> */}
@@ -286,8 +286,8 @@ export default function Page() {
 					</a>
 				</LinksContainer>
 				<StyledFooter>
-					<a target="_blank" rel="noreferrer" href={'https://thekoenekamp.eth.link/'} aria-label="IPFS">
-						IPFS
+					<a target="_blank" rel="noreferrer" href={'https://thekoenekamp.eth.limo'} aria-label="IPFS">
+						IPNS
 						<OpenInNewIcon style={{ fontSize: '12px', height: '100%' }} />
 					</a>
 					<p>Copyright © {currentYear} The Koenekamp All rights reserved.</p>
