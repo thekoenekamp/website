@@ -1,6 +1,15 @@
 # Christoph Koenekamp's Personal Website
 
-Welcome to the repository for my personal website, hosted at [thekoenekamp.com](http://www.thekoenekamp.com).
+Welcome to the repository for my personal website, hosted at [thekoenekamp.com](https://www.thekoenekamp.com).
+
+## Availability
+
+In addition to the primary domain, this website is also accessible through decentralized web addresses made possible by Ethereum Name Service (ENS) and InterPlanetary File System (IPFS)/InterPlanetary Name System (IPNS):
+
+- [thekoenekamp.eth.link](https://thekoenekamp.eth.link)
+- [thekoenekamp.eth.limo](https://thekoenekamp.eth.limo)
+
+These alternatives provide a censorship-resistant and decentralized way of accessing my website.
 
 ## About
 
@@ -8,12 +17,17 @@ This website serves as my digital portfolio, showcasing my skills, projects, and
 
 ## Features
 
-- **Portfolio**: A detailed look at my work and projects.
-- **Contact Me**: Reach out with any inquiries or opportunities.
+- **Expertise and Services**: Showcase of my specialized skills.
+- **Contact**: Reach out with any inquiries or opportunities.
 
 ## Framework Used
 
-- Next.js
+This website is built using the following technologies:
+
+- **Next.js**: A React framework for production, providing server-side rendering and generating static websites.
+- **React**: A JavaScript library for building user interfaces, enabling dynamic and responsive web pages.
+- **Material-UI (MUI)**: A popular React UI framework for designing visually appealing components and layouts.
+- **Vercel**: Hosting platform that offers seamless deployment for Next.js projects, ensuring optimal performance and scalability.
 
 ## Local Development
 
