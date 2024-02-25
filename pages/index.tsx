@@ -229,6 +229,7 @@ export default function Page() {
 	return (
 		<>
 			<Head>
+				<meta charSet="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<title>The Koenekamp</title>
 				<meta property="og:title" content="The Koenekamp" key="title" />
@@ -242,7 +243,12 @@ export default function Page() {
 				<meta name="twitter:title" content="The Koenekamp" />
 				<meta name="twitter:description" content="Personal website of Christoph Koenekamp." />
 				<meta name="twitter:image" content="https://thekoenekamp.com/favicon.ico" />
+				<meta name="description" content="Personal website of Christoph Koenekamp." />
+				<link rel="canonical" href="https://thekoenekamp.com/" />
+				<link rel="icon" href="https://thekoenekamp.com/favicon.ico" type="image/x-icon" />
+				<meta name="robots" content="index, follow" />
 			</Head>
+
 			{loading && (
 				<>
 					<Curtain style={{ width: hideCurtain ? '0%' : '100%' }} />

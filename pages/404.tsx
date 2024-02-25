@@ -81,6 +81,7 @@ export default function Page() {
 	return (
 		<>
 			<Head>
+				<meta charSet="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<meta name="robots" content="noindex" />
 				<title>404 Not Found | The Koenekamp</title>
@@ -88,14 +89,18 @@ export default function Page() {
 				<meta property="og:site_name" content="404 Not Found | The Koenekamp" />
 				<meta property="og:description" content="404 Not Found | The Koenekamp" />
 				<meta property="og:image" content="https://thekoenekamp.com/favicon.ico" />
-				<meta property="og:url" content="https://thekoenekamp.com/" />
+				<meta property="og:url" content="https://thekoenekamp.com/404" />
 				<meta property="og:type" content="website" />
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:site" content="@thekoenekamp" />
 				<meta name="twitter:title" content="404 Not Found | The Koenekamp" />
 				<meta name="twitter:description" content="404 Not Found | The Koenekamp" />
 				<meta name="twitter:image" content="https://thekoenekamp.com/favicon.ico" />
+				<meta name="description" content="404 Not Found | The Koenekamp" />
+				<link rel="canonical" href="https://thekoenekamp.com/404" />
+				<link rel="icon" href="https://thekoenekamp.com/favicon.ico" type="image/x-icon" />
 			</Head>
+
 			<StyledBox>
 				<Title>
 					<a href={'/'} aria-label="Return to home page">
