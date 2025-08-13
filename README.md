@@ -1,7 +1,7 @@
 # **The Koenekamp – Private Website**
 
-[![License: Private](https://img.shields.io/badge/License-Private-red.svg?style=for-the-badge)](./LICENSE)  
-[![Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)  
+[![License: Private](https://img.shields.io/badge/License-Private-red.svg?style=for-the-badge)](./LICENSE)
+[![Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Styled%20with-Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
 ## **Overview**
