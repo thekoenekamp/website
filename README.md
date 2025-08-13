@@ -6,7 +6,7 @@
 
 ## **Overview**
 
-This is the **official personal website of The Koenekamp**. It serves as a private, non-commercial online presence - built with the latest technologies, fully responsive, and optimized for performance and SEO.
+This is the personal website of Christoph Könekamp. It serves as a private, non-commercial online presence - built with the latest technologies, fully responsive, and optimized for performance and SEO.
 
 ## **Availability**
 
