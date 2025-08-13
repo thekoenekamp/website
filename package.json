@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"description": "Personal website and portfolio for Christoph Koenekamp, built with Next.js",
 	"author": "Christoph Koenekamp <contact@thekoenekamp.com>",
-	"license": "MIT",
+	"license": "Private Use License",
 	"private": false,
 	"repository": {
 		"type": "git",
@@ -17,31 +17,29 @@
 		"personal-website"
 	],
 	"scripts": {
+		"dev": "next dev --turbopack",
 		"build": "next build",
-		"dev": "next dev",
 		"export": "next build && next export",
 		"lint": "next lint",
 		"start": "next start"
 	},
 	"dependencies": {
-		"@emotion/react": "^11.10.5",
-		"@emotion/styled": "^11.10.5",
-		"@mui/icons-material": "^5.10.9",
-		"@mui/material": "^5.14.4",
-		"@svgr/webpack": "^8.0.1",
-		"next": "^13.4.13",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"next": "15.4.6",
+		"react": "19.1.0",
+		"react-dom": "19.1.0",
+		"react-icons": "^5.5.0"
 	},
 	"devDependencies": {
-		"@types/node": "18.7.9",
-		"@types/react": "18.0.17",
-		"eslint": "8.46.0",
-		"eslint-config-next": "13.4.13",
-		"typescript": "4.7.4"
-	},
-	"engines": {
-		"node": ">=18.16.1"
-	},
-	"browserslist": "defaults"
+		"@eslint/eslintrc": "^3",
+		"@tailwindcss/postcss": "^4",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"autoprefixer": "^10.4.21",
+		"eslint": "^9",
+		"eslint-config-next": "15.4.6",
+		"postcss": "^8.5.6",
+		"tailwindcss": "^4.1.11",
+		"typescript": "^5"
+	}
 }

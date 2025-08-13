@@ -1,70 +1,34 @@
-// import Box from '@mui/material/Box';
-// import Grid from '@mui/material/Unstable_Grid2';
-// import { styled } from '@mui/material/styles';
-// import Discord from 'public/svg/discord.svg';
-// import Facebook from 'public/svg/facebook.svg';
-// import Instagram from 'public/svg/instagram.svg';
-// import LinkedIn from 'public/svg/linkedin.svg';
-// import Pinterest from 'public/svg/pinterest.svg';
-// import Twitter from 'public/svg/twitter.svg';
-// import React from 'react';
+'use client';
 
-// const BoxStyled = styled(Box)({
-// 	display: 'flex',
-// 	width: '100%',
-// 	// backgroundColor: '#000',
-// 	position: 'absolute',
-// 	bottom: '2.5rem',
+import React from 'react';
+import { LuExternalLink } from 'react-icons/lu';
 
-// 	// media
-// 	'@media (max-width: 960px)': {
-// 		display: 'flex',
-// 		width: '100%',
-// 		backgroundColor: '#000',
-// 		position: 'absolute',
-// 		bottom: '2.5rem',
-// 		justifyContent: 'center',
-// 		alignItems: 'center',
-// 		alignContent: 'center',
-// 		margin: '0 auto 0 auto',
-// 		textAlign: 'center',
-// 	},
-// });
+export default function Footer() {
+	return (
+		<footer className="row-start-2 w-full text-black py-6 pb-[env(safe-area-inset-bottom)] mb-6 font-sans">
+			<div className="container mx-auto flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
+				{/* Left placeholder (Logo/Navi möglich) */}
+				<div className="hidden sm:block flex-1" />
 
-// export default function NestedGrid() {
-// 	return (
-// 		<BoxStyled>
-// 			<Grid container style={{ margin: '0 auto 0 auto' }}>
-// 				<Grid xs={12} container justifyContent="center" alignItems="center" flexDirection={{ xs: 'column', sm: 'row' }}>
-// 					<Grid container columnSpacing={5} sx={{ order: { xs: 1, sm: 2 } }}>
-// 						<Grid>
-// 							<a target="_blank" rel="noreferrer" href={'https://www.facebook.com/christoph.konekamp.1'}>
-// 								<Facebook style={{ fontSize: '16px', fill: '#000' }} />
-// 							</a>
-// 						</Grid>
-// 						<Grid>
-// 							<a target="_blank" rel="noreferrer" href={'https://twitter.com/KoenekampC'}>
-// 								<Twitter style={{ fontSize: '16px', fill: '#000' }} />
-// 							</a>
-// 						</Grid>
-// 						{/* <Grid>
-// 							<a target="_blank" rel="noreferrer" href={'https://discord.gg/pVyztGXFXT'}>
-// 								<Youtube style={{ fontSize: '16px', fill: '#000' }} />
-// 							</a>
-// 						</Grid> */}
-// 						<Grid>
-// 							<a target="_blank" rel="noreferrer" href={'https://www.linkedin.com/in/christophkoenekamp'}>
-// 								<LinkedIn style={{ fontSize: '16px', fill: '#000' }} />
-// 							</a>
-// 						</Grid>
-// 						<Grid>
-// 							<a target="_blank" rel="noreferrer" href={'https://www.instagram.com/christophkoenekamp'}>
-// 								<Instagram style={{ fontSize: '16px', fill: '#000' }} />
-// 							</a>
-// 						</Grid>
-// 					</Grid>
-// 				</Grid>
-// 			</Grid>
-// 		</BoxStyled>
-// 	);
-// }
+				{/* IPNS Link */}
+				<div className="text-[0.6rem] text-center">
+					<a
+						href="https://thekoenekamp.eth.limo"
+						target="_blank"
+						rel="noreferrer"
+						className="inline-flex items-center gap-1 underline underline-offset-1"
+					>
+						<span className="relative top-[1px]">IPNS</span>
+						<LuExternalLink className="w-3 h-3" />
+					</a>
+				</div>
+
+				{/* Right placeholder */}
+				<div className="hidden sm:block flex-1" />
+			</div>
+
+			{/* Bottom Section */}
+			<div className="mt-2 text-[0.5rem] text-center">Copyright © {new Date().getFullYear()} The Koenekamp. All rights reserved.</div>
+		</footer>
+	);
+}

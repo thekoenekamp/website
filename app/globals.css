@@ -1,0 +1,42 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
+
+/* Tailwind v4 */
+@import 'tailwindcss';
+
+/* Design-Token & Breakpoints */
+@theme {
+	--font-display: ui-serif, Georgia, 'Times New Roman', Times, serif;
+	--font-baskerville: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;
+	--font-luxuriousScript: 'Luxurious Script', cursive;
+
+	/* Custom Colors */
+	--color-primary: #111111;
+	--color-secondary: #222222;
+	--color-background: #ffffff;
+	--color-background-reverse: #000000;
+	--color-text: #0a0a0a;
+	--color-accent: #6b7280; /* neutral-500 */
+	--color-muted: #9ca3af; /* neutral-400 */
+
+	/* Breakpoints */
+	--breakpoint-xs: 480px;
+	--breakpoint-sm: 640px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 1024px;
+	--breakpoint-xl: 1280px;
+	--breakpoint-2xl: 1536px;
+	--breakpoint-3xl: 1920px;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	-webkit-overflow-scrolling: auto;
+	position: fixed;
+	font-family: var(--font-baskerville);
+	width: 100%;
+}
