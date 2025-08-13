@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"description": "Personal website and portfolio for Christoph Koenekamp, built with Next.js",
 	"author": "Christoph Koenekamp <contact@thekoenekamp.com>",
-	"license": "Private Use License",
+	"license": "UNLICENSED",
 	"private": false,
 	"repository": {
 		"type": "git",
@@ -19,7 +19,6 @@
 	"scripts": {
 		"dev": "next dev --turbopack",
 		"build": "next build",
-		"export": "next build && next export",
 		"lint": "next lint",
 		"start": "next start"
 	},
