@@ -15,20 +15,20 @@ export const metadata: Metadata = {
 	applicationName: siteName,
 	keywords: ['Christoph Könekamp', 'The Koenekamp', 'DeFi Specialist', 'Blockchain Consultant', 'Web3 Developer', 'ENS', 'IPFS', 'IPNS'],
 	openGraph: {
-		type: 'website',
+		title: 'Christoph Könekamp',
+		description: 'Authority in form. Discipline in presence. Timeless by design.',
 		url: 'https://thekoenekamp.com',
-		siteName,
-		title,
-		description,
-		locale: 'en_US',
+		siteName: 'KÖNEKAMP',
 		images: [
 			{
-				url: '/og-image.jpg',
+				url: 'https://thekoenekamp.com/og.png',
 				width: 1200,
 				height: 630,
-				alt: 'The Koenekamp',
+				alt: 'Könekamp Website Preview',
 			},
 		],
+		locale: 'en_US',
+		type: 'website',
 	},
 	twitter: {
 		card: 'summary_large_image',
