@@ -5,8 +5,7 @@ import './globals.css';
 
 const siteName = 'KÖNEKAMP';
 const title = siteName;
-const description =
-	'Christoph Könekamp – DeFi Specialist, Blockchain Consultant, Full-Stack Web3 Developer, Infrastructure Architect (ENS/IPFS/IPNS).';
+const description = 'Authority in form. Discipline in presence. Timeless by design.';
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://thekoenekamp.com'),
@@ -36,7 +35,7 @@ export const metadata: Metadata = {
 		description,
 		site: '@thekoenekamp',
 		creator: '@thekoenekamp',
-		images: ['/og-image.jpg'],
+		images: ['/og.png'],
 	},
 	alternates: {
 		canonical: 'https://thekoenekamp.com',
