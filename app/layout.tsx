@@ -1,17 +1,9 @@
 import Footer from '@/components/layout/Footer';
+import Header from '@/components/layout/Header';
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Playfair_Display } from 'next/font/google';
 import './globals.css';
 
-const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });
-const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin'] });
-const playfair = Playfair_Display({
-	variable: '--font-display',
-	subsets: ['latin'],
-	weight: ['400', '500', '600', '700', '800', '900'],
-});
-
-const siteName = 'The Koenekamp';
+const siteName = 'KÖNEKAMP';
 const title = siteName;
 const description =
 	'Christoph Könekamp – DeFi Specialist, Blockchain Consultant, Full-Stack Web3 Developer, Infrastructure Architect (ENS/IPFS/IPNS).';
@@ -56,10 +48,11 @@ export const metadata: Metadata = {
 	category: 'technology',
 	authors: [{ name: 'Christoph Könekamp', url: 'https://thekoenekamp.com' }],
 	creator: 'Christoph Könekamp',
-	publisher: 'The Koenekamp',
+	publisher: 'Christoph Könekamp',
 	icons: {
 		icon: [
 			{ url: '/favicon.ico' },
+			{ url: '/logo.svg', type: 'image/svg+xml' },
 			{ url: '/icon.png', type: 'image/png', sizes: '32x32' },
 			{ url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
 			{ url: '/apple-touch-icon.png', rel: 'apple-touch-icon', sizes: '180x180' },
@@ -70,9 +63,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en" className="h-full bg-white text-neutral-900">
-			<body className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased h-full`}>
-				{/* Ganze Seite = Viewport-Höhe, Footer immer unten */}
-				<div className="min-h-svh grid grid-rows-[1fr_auto] overflow-hidden">
+			<body className="antialiased h-full">
+				{/* Whole page = Viewport height, Footer always at bottom */}
+				<div className="flex min-h-svh flex-col overflow-hidden">
 					<script
 						type="application/ld+json"
 						dangerouslySetInnerHTML={{
@@ -81,7 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 								'@type': 'Person',
 								name: 'Christoph Könekamp',
 								url: 'https://thekoenekamp.com',
-								email: 'mailto:contact@thekoenekamp.com',
+								email: 'mailto:office@thekoenekamp.com',
 								jobTitle: ['DeFi Specialist', 'Blockchain Consultant', 'Full-Stack Web3 Developer', 'Infrastructure Architect'],
 								sameAs: [
 									'https://x.com/your_handle',
@@ -92,7 +85,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 							}),
 						}}
 					/>
-					<main className="flex items-center justify-center px-6">{children}</main>
+					<Header />
+					<main className="flex-1 flex items-center justify-center px-6">{children}</main>
 					<Footer />
 				</div>
 			</body>

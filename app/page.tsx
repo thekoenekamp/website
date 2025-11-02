@@ -5,28 +5,30 @@ export default function Home() {
 	return (
 		<main className="flex flex-col items-center justify-center text-center w-full max-w-[760px] px-6 cursor-default">
 			{/* Brand / Name */}
-			<h1 className="font-[var(--font-display)] text-4xl sm:text-5xl md:text-6xl font-normal leading-tight tracking-wide mb-10">
-				<span className="font-luxuriousScript">The Koenekamp</span>
-			</h1>
+			<div className="text-4xl sm:text-5xl md:text-5xl font-normal leading-tight tracking-wide mb-0">
+				<div className="space-y-2">
+					<div className="scale-y-[0.9]">KÖNEKAMP</div>
+				</div>
+			</div>
 
 			{/* Name + Email */}
-			<div className="mb-6 space-y-2">
-				<div className="text-sm mb-0 font-semibold">Christoph Könekamp</div>
-				<a href="mailto:contact@thekoenekamp.com" className="text-sm underline">
-					contact@thekoenekamp.com
+			<div className="mb-0 space-y-2">
+				{/* <div className="text-sm mb-0 font-semibold">Christoph Könekamp</div> */}
+				<a href="mailto:office@thekoenekamp.com" className="text-sm underline">
+					office@thekoenekamp.com
 				</a>
 			</div>
 
 			{/* Roles */}
-			<ul className="text-sm leading-relaxed text-neutral-700 space-y-0 font-medium">
+			{/* <ul className="text-sm leading-relaxed space-y-0">
 				<li>DeFi Specialist</li>
 				<li>Blockchain Consultant</li>
 				<li>Full-Stack Web3 Developer</li>
 				<li>Infrastructure Architect (ENS/IPFS/IPNS)</li>
-			</ul>
+			</ul> */}
 
 			{/* Social Links */}
-			<div className="mt-6 flex space-x-6">
+			<div className="mt-4 flex space-x-6">
 				<a target="_blank" rel="noreferrer" href="https://x.com/thekoenekamp" className="group" title="X (Twitter)" aria-label="X (Twitter)">
 					<FaXTwitter className="w-4 h-4" />
 				</a>

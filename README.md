@@ -1,4 +1,4 @@
-# **The Koenekamp – Private Website**
+# **Könekamp – Website**
 
 [![License: Private](https://img.shields.io/badge/License-Private-red.svg?style=for-the-badge)](./LICENSE)
 [![Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)

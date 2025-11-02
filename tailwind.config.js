@@ -29,7 +29,9 @@ module.exports = {
 				muted: 'var(--color-muted)', // Muted/gray text
 			},
 			fontFamily: {
-				luxuriousScript: ['"Luxurious Script"', 'cursive'],
+				baskerville: ['"Baskerville"', 'serif'],
+				baskervville: ['"Baskervville"', 'serif'],
+				montserrat: ['"Montserrat"', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
 			},
 			animation: {
 				pulse: 'pulse 2s infinite',

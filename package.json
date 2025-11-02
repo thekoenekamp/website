@@ -1,8 +1,8 @@
 {
 	"name": "thekoenekamp-website",
 	"version": "0.1.0",
-	"description": "Personal website and portfolio for Christoph Koenekamp, built with Next.js",
-	"author": "Christoph Koenekamp <contact@thekoenekamp.com>",
+	"description": "Personal website and portfolio for Christoph Könekamp, built with Next.js",
+	"author": "Christoph Könekamp <office@thekoenekamp.com>",
 	"license": "UNLICENSED",
 	"private": false,
 	"repository": {
